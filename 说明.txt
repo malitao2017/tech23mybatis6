@@ -1,0 +1,10 @@
+
+
+博客标题：
+MyBatis学习总结(六)——调用存储过程
+http://www.cnblogs.com/xdp-gacl/p/4270352.html
+
+包括：
+存储过程的准备和调用
+
+

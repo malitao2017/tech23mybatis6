@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="me.mapping.classMapper">
+<!-- 	注意最后一个标签的内容，易错  -->
+	<select id="getUserCount" parameterMap="userCountMap" statementType="CALLABLE" >
+		call mybatis.ges_user_count(?,?)
+	</select>
+	<parameterMap type="java.util.Map" id="userCountMap">
+		<parameter property="setId" mode="IN" jdbcType="INTEGER"/>
+		<parameter property="count" mode="OUT" jdbcType="INTEGER"/>
+	</parameterMap>
+</mapper>
+
+
+
